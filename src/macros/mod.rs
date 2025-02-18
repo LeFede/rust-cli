@@ -22,3 +22,10 @@ macro_rules! file_create_success {
         log_ok!("File \"{}\" succesfully created", $path);
     };
 }
+
+#[macro_export]
+macro_rules! file_read_error {
+    ($path:expr, $e:expr) => {
+        log_err!("Error reading file '{}': {}", $path, $e);
+    };
+}
