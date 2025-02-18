@@ -1,9 +1,21 @@
 mod copy_dir;
+mod create_component;
+mod create_component_header;
 mod create_dir_all;
 mod create_file;
+mod create_system_file;
 mod read_file;
+mod update_register_c;
+mod update_system_register_c;
+mod update_systems_h;
 
 pub use copy_dir::copy_dir;
+pub use create_component::create_component;
+pub use create_component_header::create_component_header;
 pub use create_dir_all::create_dir_all;
 pub use create_file::create_file;
+pub use create_system_file::create_system_file;
 pub use read_file::read_file;
+pub use update_register_c::update_register_c;
+pub use update_system_register_c::update_register_systems_c;
+pub use update_systems_h::update_systems_h;

@@ -1,5 +1,5 @@
-use std::fs::{self, File};
-use std::io::{self, Read, Write};
+use std::fs;
+use std::io;
 use std::path::Path;
 
 pub fn copy_dir(src: &str, dst: &str) -> io::Result<()> {
