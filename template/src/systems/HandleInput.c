@@ -17,4 +17,8 @@ void HandleInput(ecs_iter_t *it) {
   input->down = IsKeyDown(KEY_DOWN);
   input->right = IsKeyDown(KEY_RIGHT);
   input->left = IsKeyDown(KEY_LEFT);
+
+  input->down_1 = IsKeyPressed(KEY_ONE);
+  input->down_2 = IsKeyPressed(KEY_TWO);
+  input->down_3 = IsKeyPressed(KEY_THREE);
 }
