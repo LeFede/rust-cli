@@ -12,7 +12,11 @@ int main(int argc, char *argv[]) {
   define_components(world);
   define_systems(world);
 
-  /* ══════════════════════════ Main Loop ═══════════════════════════════════ */
+  ecs_entity_t e = ecs_new(world);
+  ecs_set(world, e, Position, {.x = 0, .y = 0});
+
+  /* ══════════════════════════ Main Loop
+     ═══════════════════════════════════ */
   float delta = 0.0f;
   while (!WindowShouldClose()) {
     delta = GetFrameTime();
